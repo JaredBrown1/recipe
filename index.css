@@ -1,0 +1,153 @@
+body {
+	background-color: #f3e5d7;
+	padding-top: 123px;
+	font-family: "Playfair Display", serif;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 15px;
+}
+
+li {
+	color: #5f564d;
+}
+.container {
+	background-color: white;
+	width: 736px;
+	height: 1708px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 40px;
+	border-radius: 24px;
+	margin: 0 auto;
+	margin-bottom: 123px;
+}
+
+.image {
+	width: 656px;
+	height: 300px;
+	background-image: url("/assets/omelette.svg");
+}
+
+.content {
+	padding-left: 40px;
+}
+
+.preparation {
+	background-color: #f5ebf0;
+	width: 656px;
+	height: 180px;
+	border-radius: 12px;
+	margin-top: 32px;
+}
+
+.preparation h2 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #7a284e;
+	line-height: 12px;
+	padding-top: 28px;
+	padding-left: 28px;
+}
+
+.preparation li {
+	line-height: 30px;
+	margin-left: 28px;
+}
+
+li {
+	list-style-type: none; /* Remove default bullets */
+}
+
+li::before {
+	content: "•"; /* Add a bullet before each list item */
+	color: #7a284e; /* Change the color of the bullet */
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em; /* Align the bullet with the list item */
+}
+
+.li-bold {
+	font-weight: 700;
+}
+
+.li-reg {
+	font-weight: 400;
+}
+
+.ingredients {
+	border-bottom: #e3ddd7 1px solid;
+	width: 656px;
+}
+
+.ingredients h2 {
+	color: #7a284e;
+	font-weight: 400;
+	font-size: 28px;
+}
+
+.ingredients li {
+	line-height: 35px;
+}
+
+.instructions {
+	border-bottom: #e3ddd7 1px solid;
+	width: 656px;
+}
+
+.instructions h2 {
+	color: #7a284e;
+	font-weight: 400;
+	font-size: 28px;
+}
+
+.instructions li {
+	line-height: 35px;
+}
+
+.instructions ol {
+	list-style-type: none; /* Remove default numbers */
+	counter-reset: li; /* Initialize CSS counter */
+}
+
+.instructions li::before {
+	counter-increment: li; /* Increment the counter */
+	content: counter(li) "."; /* Display the counter */
+	color: #7a284e; /* Change the color of the number */
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em; /* Align the number with the list item */
+}
+
+.nutrition h2 {
+	color: #7a284e;
+	font-weight: 400;
+	font-size: 28px;
+}
+
+.nutrition h3 {
+	font-size: 16px;
+	color: #5f564d;
+}
+
+.chart {
+	display: flex;
+	width: 656px;
+	text-align: left;
+}
+
+.chart-item {
+	width: 328px;
+	border-bottom: #e3ddd7 1px solid;
+}
+
+.chart-item.measurement {
+	color: #7a284e;
+	font-weight: 700;
+}
