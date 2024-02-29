@@ -14,8 +14,13 @@
   </head>
   <body>
     <div class="container">
-      <img class="image" src="./assets/omelette.svg" />
-
+      <picture>
+        <source
+          media="(max-width: 600px)"
+          srcset="./assets/top-image-mobile.svg"
+        />
+        <img class="image" src="./assets/omelette.svg" />
+      </picture>
       <div class="content">
         <h1>Simple Omelette Recipe</h1>
         <p>
